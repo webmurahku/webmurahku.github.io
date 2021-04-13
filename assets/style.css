@@ -4,8 +4,36 @@
 * {
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 .myherocontainer {
-    height:90vh;
-    width: auto;
+    display:flex;
+    height:10vh;
+    margin: auto 0;
+    justify-content: center;
+    width:auto;
+    
 }
+
+.logocontainer {
+    background-color: transparent;
+    display:flex;
+}
+
+#webmurahkulogotext {
+    font-family: "Fredoka One";
+}
+
+#logosvg {
+    margin:10px;
+    width:200px;
+}
+
+@media screen and (max-width:720px) {
+    #logosvg {
+        width:200px;
+        margin:5px auto;
+        text-align: center;
+    }
+}
+
