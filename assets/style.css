@@ -6,18 +6,67 @@
     padding:0;
     box-sizing: border-box;
 }
-.myherocontainer {
-    display:flex;
-    height:10vh;
-    margin: auto 0;
-    justify-content: center;
-    width:auto;
-    
+body {
+    height:100vh;
+    background-color: #5dad7eff ;
 }
 
 .logocontainer {
     background-color: transparent;
     display:flex;
+    padding:0.5em;
+    height:20%;
+}
+
+.myherocontainer {
+    display:flex;
+    margin: auto 0;
+    justify-content: center;
+    height:70%;
+}
+
+.heroimagecontainer {
+    display:flex;
+    position: relative;
+    margin-bottom:0;
+    margin-top:auto;
+    height:100%;
+}
+
+.heroimage {
+    height:100%;
+    text-align: center;
+    
+}
+
+.footercontainer {
+    display:flex;
+    margin-top:auto;
+    margin-bottom:0;
+    height:10%;
+    opacity: 70%;
+    background-color: white;
+    border-radius: 2em 2em 0 0;
+    padding:0 0 0 0;
+}
+.comlogocontainer {
+    display:flex;
+    height:100%;
+    width:100%;
+    opacity: 100%;
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.comlogo {
+    height:70%;
+    margin: auto 0 auto 0%;
+    padding:0;
+}
+
+.comlogocontainer > * {
+    margin-right:1em;
+    margin-left:1em;
 }
 
 #webmurahkulogotext {
@@ -25,15 +74,73 @@
 }
 
 #logosvg {
-    margin:10px;
-    width:200px;
+    margin:0px;
+    height:100%;
 }
 
 @media screen and (max-width:720px) {
     #logosvg {
-        width:200px;
-        margin:5px auto;
+        height:100%;
+        margin:0px auto 0 0;
         text-align: center;
     }
+
+    .logocontainer {
+        height:15%;
+    }
+
+    .myherocontainer {
+        display:flex;
+        width:100%;
+        height:75%;
+        margin: auto 0;
+        justify-content: center;
+    }
+
+    .footercontainer {
+        display:flex;
+        margin-top:auto;
+        margin-bottom:auto;
+        height:10%;
+        opacity: 70%;
+        background-color: white;
+        border-radius: 2em 2em 0 0;
+        padding:0;
+    }
+
+    .comlogo {
+        height:70%;
+        margin: auto 0 auto 0%;
+        padding:0;
+    }
+
+    .comlogocontainer {
+        display:flex;
+        height:100%;
+        border-radius: 2em 2em 0 0;
+        margin-left:1em;
+    }
+    
+    .comlogocontainer > * {
+        margin-right:1em;
+    }
+
+    .heroimagecontainer {
+        display:flex;
+        position: relative;
+        margin-bottom:0;
+        margin-top:auto;
+        height:90%;
+    }
+
+    .heroimage {
+        height:100%;
+        text-align: center;
+        
+    }
+
+    
+  
+
 }
 
