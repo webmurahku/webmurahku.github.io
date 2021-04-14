@@ -184,21 +184,26 @@ background-color:#5dad7eff;
   #yellowbubble {
       position:absolute;
       z-index:2;
-      width:30%
+      width:30%;
+      margin-top:35%;
+      margin-left:70%;
+
       
   }
   
 
   #bluebubble {
     position:absolute;
-    width:70%;
-    margin-left:60%;
+    width:60%;
+    margin-left:-40%;
     z-index:1;
   }
 
   #orangebubble {
     position:absolute; 
     width:50%;
+    margin-top:-10%;
+    margin-left:50%;
     z-index:3;
   }
 
