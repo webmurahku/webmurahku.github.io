@@ -115,7 +115,7 @@ h1 {
 background-color:#5dad7eff;
         display:flex;       
         width:100%;
-        height:55%;
+        height:60%;
         margin: auto 0;
         padding:0;
        }
@@ -134,34 +134,35 @@ background-color:#5dad7eff;
         height:100%;
         margin:0;
         margin-left:20%;
-        z-index:5;
+        z-index:0;
     }
 
     .footercontainer {
+        position:relative;
         display:flex;
-        align-items:flex-start;
-        justify-content: flex-start;
-        flex-direction: column;
-        height:25%;
+        height:20%;
         opacity: 100%;
-        background-color: #5dad7eff ;
-        border-radius:0;
+        background-color: red ;
+        border-radius:2em 2em 0 0;
+        z-index:10;
+    }
+
+    #footerbox {
         z-index:10;
     }
 
     .comlogo {
         margin: 0; 
         padding:0;
-        height:80%;
+        height:3em;
+        width:3em;
     }
 
     .comlogocontainer {    
        width:100%;
-       height:100%;
+       height:3em;
        background-color:#fff;
-       border-radius:2em 2em 0 0;
-       padding:3% 3% 10% 3%;
-       z-index:10;
+        z-index:10;
     }
     
     .comlogocontainer :not(:last-child) {
@@ -175,7 +176,7 @@ background-color:#5dad7eff;
         margin-left:-50%;
         margin-top:5%;
         background-color: transparent;
-        z-index:20;
+        z-index:0;
         
     }
 
@@ -190,7 +191,7 @@ background-color:#5dad7eff;
 
   #yellowbubble {
       position:absolute;
-      z-index:2;
+      z-index:0;
       width:30%;
       margin-top:35%;
       margin-left:70%;
@@ -203,7 +204,7 @@ background-color:#5dad7eff;
     position:absolute;
     width:60%;
     margin-left:-40%;
-    z-index:1;
+    z-index:0;
   }
 
   #orangebubble {
@@ -211,15 +212,22 @@ background-color:#5dad7eff;
     width:50%;
     margin-top:-10%;
     margin-left:50%;
-    z-index:3;
-  }
+    z-index:0;
+  } 
 
-  .confirmbuttoncontainer {
+  #confirmbuttoncontainer {
       position:absolute;
+      background-color:transparent;
+      border:none;
+      outline:none;
       margin-left:40%;
       margin-top:42%;
       width:25%;
-      z-index:20;
+      z-index:0;
+  }
+
+  #confirmbuttoncontainer:hover {
+      cursor: pointer;
   }
  
 
