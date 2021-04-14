@@ -86,6 +86,7 @@ h1 {
     height:100%;
 }
 
+/*=========================================================================*/
 @media screen and (max-width:720px) {
 
     
@@ -97,23 +98,40 @@ h1 {
 
     .logocontainer {
         height:20%;
-        padding-top:10%;
-        padding-left:5%;
+        padding-top:3%;
+        padding-left:3%;
     }
 
     .myherocontainer {
         position:relative;
-        background-color:red;
+        background-color:transparent;
         display:flex;
         width:100%;
         height:60%;
         margin: auto 0;
-        justify-content: center;
-        align-content: center;
+        padding:0;
+       }
+
+       .heroimagecontainer {
+        padding:0;
+        position:absolute;
+        display:flex;
+        align-items: flex-end;
+        background-color:transparent;
+        height:100%;
+
+    }
+
+    .heroimage {
+        height:90%;
+        margin:0;
+        z-index:1;
     }
 
     .footercontainer {
         display:flex;
+        align-items:flex-start;
+        justify-content: flex-start;
         flex-direction: column;
         height:20%;
         opacity: 70%;
@@ -124,31 +142,24 @@ h1 {
     .comlogo {
         margin: 0; 
         padding:0;
+        height:100%;
     }
 
     .comlogocontainer {    
-       margin-left:3%;
-       width:80%;
-
+       margin-top:2.5%;
+       margin-left:2.5%;
+       width:100%;
+       height:50%;
+        background-color:transparent;
     }
     
     .comlogocontainer :not(:last-child) {
         margin-right:1em;
     }
 
-    .heroimagecontainer {
-        position:relative;
-        background-color:transparent;
-        margin-left:5%;
-        height:85%;
+   
 
-    }
-
-    .heroimage {
-        height:100%;
-        margin:0;
-        z-index:1;
-    }
+    
 
     .descriptioncontainer {
         position:absolute;
@@ -173,29 +184,27 @@ h1 {
 
   #yellowbubble {
       position:absolute;
-      width:40%;
-      margin-left:60%;
+      margin-left:40%;
       z-index:-11;
-      display:none;
+      width:30%
+      
   }
   
 
   #bluebubble {
     position:absolute;
-    margin-left:-20%;
+    margin-left:-30%;
     margin-top:5%;
     width:70%;
     z-index:-12;
-    display:none;
   }
 
   #orangebubble {
     position:absolute; 
     margin-left:75%;
-    margin-top:35%;
-    width:30%;
+    margin-top:25%;
+    width:50%;
     z-index:-13;
-    display:none;
   }
 
   .confirmbuttoncontainer {
@@ -204,7 +213,7 @@ h1 {
       margin-top:70%;
       width:30%;
       z-index:9999;
-      display:none;
+      display:block;
   }
  
 
