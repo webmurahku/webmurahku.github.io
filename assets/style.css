@@ -115,7 +115,7 @@ h1 {
 background-color:#5dad7eff;
         display:flex;       
         width:100%;
-        height:60%;
+        height:55%;
         margin: auto 0;
         padding:0;
        }
@@ -131,7 +131,7 @@ background-color:#5dad7eff;
     }
 
     .heroimage {
-        height:90%;
+        height:100%;
         margin:0;
         margin-left:20%;
         z-index:5;
@@ -142,7 +142,7 @@ background-color:#5dad7eff;
         align-items:flex-start;
         justify-content: flex-start;
         flex-direction: column;
-        height:20%;
+        height:25%;
         opacity: 100%;
         background-color: #5dad7eff ;
         border-radius:0;
@@ -217,7 +217,7 @@ background-color:#5dad7eff;
   .confirmbuttoncontainer {
       position:absolute;
       margin-left:40%;
-      margin-top:50%;
+      margin-top:42%;
       width:25%;
       z-index:20;
   }
