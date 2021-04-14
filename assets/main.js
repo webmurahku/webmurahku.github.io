@@ -18,7 +18,7 @@ function updateSize() {
 var activities = document.getElementById("confirmbuttoncontainer");
 var target = document.getElementById("footerBox");
 activities.addEventListener("click", () => {
-    console.log("clicked");
+   
     gsap.to(target,{duration:0.5, height:"85%", y:"-70%", ease:"power4"});
 });
 
