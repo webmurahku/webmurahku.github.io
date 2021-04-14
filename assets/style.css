@@ -250,7 +250,30 @@ background-color:#5dad7eff;
   #confirmbuttoncontainer:hover {
       cursor: pointer;
   }
- 
 
+  .detailbox {
+      position:absolute;
+      display:flex;
+      flex-direction: column;
+      justify-content: top;
+      height:70%;
+      width:80%;
+        font-weight: 100;
+        font-size:2.5vh;
+      background-color:transparent;
+      margin:10% 7%;
+      opacity:0;
+  }
+
+  .detailitem :not(:last-child){
+      margin-bottom: 1vh;
+  }
+  .list {
+      margin-left:1em;
+  }
+ 
+  .detailheader {
+      margin-bottom:2vh;
+  }
 }
 
