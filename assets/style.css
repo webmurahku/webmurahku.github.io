@@ -170,8 +170,9 @@ background-color:#5dad7eff;
         outline:none;
         height:30px;
         align-items:center;
-        margin-left:90vw;
-        margin-top:10px;
+        margin-left:auto;
+        margin-right:3vw;
+        margin-top:2vh;
         justify-content: center;
         border:#444444 solid 1px;
         color:#444444;
@@ -202,11 +203,11 @@ background-color:#5dad7eff;
     }
 
     .herotext {
-        font-size: 1.5em;
+        font-size: 4vh;
         color:white;
-        margin-bottom:1em;
         font-family:"Montserrat";
         text-shadow: 2.5px 2.5px #2c2c4c;
+        margin-bottom: 2.5vh;
 
     }
 
