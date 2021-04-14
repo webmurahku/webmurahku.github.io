@@ -19,6 +19,13 @@ h1 {
     font-size: 1.5em;
 }
 
+.strong {
+    color:red;
+    white-space:nowrap;
+    font-family:"Fredoka One";
+    font-weight: 400;
+}
+
 .logocontainer {
     background-color: #5dad7eff ;
     display:flex;
@@ -126,6 +133,7 @@ background-color:#5dad7eff;
     .heroimage {
         height:90%;
         margin:0;
+        margin-left:20%;
         z-index:5;
     }
 
@@ -163,21 +171,20 @@ background-color:#5dad7eff;
     .descriptioncontainer {
         position:absolute;
         color:#fff;
-        width:50%;
-        margin-left:-40%;
-        z-index: 2;
-        margin-left:-35%;
+        width:35%;
+        margin-left:-50%;
         margin-top:5%;
         background-color: transparent;
-        display:none;
+        z-index:20;
+        
     }
 
     .herotext {
-        font-size:1.4em;
+        font-size: 1.5em;
         color:white;
         margin-bottom:1em;
         font-family:"Montserrat";
-        text-shadow: 1.5px 1.5px black;
+        text-shadow: 2.5px 2.5px #2c2c4c;
 
     }
 
@@ -209,11 +216,10 @@ background-color:#5dad7eff;
 
   .confirmbuttoncontainer {
       position:absolute;
-      margin-left:20vw;
-      margin-top:70%;
-      width:30%;
-      z-index:9999;
-      display:none;
+      margin-left:40%;
+      margin-top:50%;
+      width:25%;
+      z-index:20;
   }
  
 
