@@ -237,6 +237,11 @@ background-color:#5dad7eff;
     z-index:0;
   } 
 
+  .pricebox {
+    margin-top:2vh;
+    font-size:5vh;
+  }
+
   #confirmbuttoncontainer {
       position:absolute;
       background-color:transparent;
@@ -266,7 +271,7 @@ background-color:#5dad7eff;
       opacity:0;
   }
 
-  .detailitem :not(:last-child){
+  .detailitem{
       margin-bottom: 1vh;
   }
   .list {
