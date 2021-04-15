@@ -132,6 +132,7 @@ background-color:#5dad7eff;
 
     .heroimage {
         height:100%;
+        width:auto;
         margin:0;
         margin-left:20vw;
         z-index:0;
