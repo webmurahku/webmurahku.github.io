@@ -12,7 +12,7 @@ body {
     height:100vh;
     background-color: #5dad7eff;
     font-family: "Montserrat";
-    overflow: hidden;
+    overflow:hidden;
 }
 
 h1 {
@@ -200,6 +200,7 @@ background-color:#5dad7eff;
         margin-top:5%;
         background-color: transparent;
         z-index:0;
+        display:none;
         
     }
 
@@ -217,7 +218,8 @@ background-color:#5dad7eff;
       z-index:0;
       width:30%;
       margin-top:35%;
-      margin-left:70%;
+        margin-left:70%;
+        display:none;
 
       
   }
@@ -228,6 +230,8 @@ background-color:#5dad7eff;
     width:60%;
     margin-left:-40%;
     z-index:0;
+    display:none;
+    
   }
 
   #orangebubble {
@@ -236,6 +240,8 @@ background-color:#5dad7eff;
     margin-top:-10%;
     margin-left:50%;
     z-index:0;
+    display:none;
+
   } 
 
   .pricebox {
