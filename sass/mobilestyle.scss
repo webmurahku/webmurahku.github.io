@@ -152,7 +152,7 @@ a {
   }
 
   .heroHeader {
-    font-size: 1.4em;
+    font-size: 5vh;
     font-family: "Roboto";
   }
 
@@ -180,9 +180,32 @@ a {
   }
 
   .logoCom {
-    width: 20%;
-    height: auto;
+    width: 8vh;
+    height: 8vh;
+    outline:none;
+    border:none;
+    background-color: transparent;
+  
   }
+
+  #whatsappButton {
+    background-image: url("/assets/logoWhatsapp.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #facebookButton {
+    background-image: url("/assets/logoFacebook.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #instagramButton {
+    background-image: url("/assets/logoInstagram.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
 
   .detailContainer {
     position: absolute;
@@ -201,12 +224,12 @@ a {
   .subHeader {
     font-family: "Montserrat";
     color: #444c;
-    font-size: 1.3em;
+    font-size: 3.5vh;
     margin-bottom: 10px;
   }
 
   .descList {
-    padding:0 0 0 15px;
+    padding:0 0 0 6vw;
     margin:0;
     justify-content: left;
     
@@ -215,6 +238,7 @@ a {
 
   .desc {
     font-family: "Montserat";
+    font-size:2.5vh;
     margin: 0;
     padding: 0;
     margin-left:0%;

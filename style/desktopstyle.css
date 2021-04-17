@@ -112,13 +112,13 @@ body {
   width: 50%;
   color: #fff;
   z-index: 99999;
-  top: 1%;
+  top: 0;
   left: 5%;
   text-shadow: 3px 3px dimgray;
 }
 
 .heroHeader {
-  font-size: 3.5em;
+  font-size: 10vh;
   font-family: "Roboto";
   text-align: left;
 }
@@ -174,8 +174,103 @@ body {
 }
 
 .logoCom {
-  height: 80%;
-  top: 0;
+  width: 8vh;
+  height: 8vh;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  opacity: 80%;
+}
+
+.logoCom:hover {
+  opacity: 100%;
+}
+
+#whatsappButton {
+  background-image: url("/assets/logoWhatsapp.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#facebookButton {
+  background-image: url("/assets/logoFacebook.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#instagramButton {
+  background-image: url("/assets/logoInstagram.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.closeButton {
+  position: absolute;
+  background-color: transparent;
+  padding: 0;
+  right: 15px;
+  top: 15px;
+  outline: none;
+  border: gray solid 1px;
+  width: 5vh;
+  height: 5vh;
+  transform: rotate(45deg);
+  border-radius: 2.5vh;
+  visibility: hidden;
+  z-index: 10000;
+}
+
+.buttonContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4vh;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  border-radius: 2vh;
+  color: gray;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+.detailContainer {
+  position: absolute;
+  background-color: transparent;
+  height: 100%;
+  width: 90%;
+  top: 0px;
+  left: 5vw;
+  padding: 0;
+  margin: 0;
+  box-sizing: border;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.subHeader {
+  font-family: "Montserrat";
+  color: #444c;
+  font-size: 8vh;
+  margin-bottom: 10px;
+}
+
+.descList {
+  padding: 0 0 0 2.5vw;
+  padding: 0 0 0 2.5vw;
+  margin: 0;
+  justify-content: left;
+}
+
+.desc {
+  font-family: "Montserat";
+  margin: 0;
+  padding: 0;
+  margin-left: 0%;
+  margin-right: auto;
+  font-size: 5vh;
 }
 
 /*# sourceMappingURL=desktopstyle.css.map */
