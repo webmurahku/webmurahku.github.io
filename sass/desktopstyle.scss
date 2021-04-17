@@ -1,52 +1,182 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-$primary-color:#5dad7eff;
-$primary-font-color:white;
-$secondary-color:#fff;
-
+$primary-color: #5dad7eff;
+$primary-font-color: gray;
+$secondary-color: #fff;
 
 html {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    overflow-x:hidden;
-    
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    background-color:$primary-color;
-    color: $primary-font-color;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $primary-color;
+  color: $primary-font-color;
 }
-
 .headerContainer {
-    position:relative;
-    height:20vh;
+  position:relative;
+  background-color: transparent;
+  height: 34vh;
 }
 
 .logoContainer {
-    position:absolute;
-    background-image: url(/assets/Logo.svg);
-    background-repeat:no-repeat;
-    height:100vh;
-    width:20vw;
-    top:1vh;
-    left:1vw;
+  position:absolute;
+  background-color: transparent;
+  background-image: url(/assets/Logo.svg);
+  background-repeat: no-repeat;
+  width: 40%;
+  height: 95%;
+  top:5%;
+  left:1%;
+  
+}
+.contentContainer {
+  position: relative;
+  height: 56vh;
+  width: 100vw;
+  background-color: transparent;
+  z-index: 0;
 }
 
-.contentContainer {
-    position:relative;
-    height:70vh;
-    background-color: darkcyan;
+.heroImgContainer {
+  position: absolute;
+  background-color: transparent;
+  bottom:0;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
 }
+
+.heroImg {
+  position: absolute;
+  width: auto;
+  height: 150%;
+  bottom: 0;
+  right: 15%;
+}
+
+.confirmButton {
+  position: absolute;
+  background-image: url("/assets/confirmbutton.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  width: 30vh;
+  height: 30vh;
+  bottom: 5%;
+  right: 10vw;
+}
+
+.closeButton {
+  position: absolute;
+  padding: 0;
+  right: 3%;
+  cursor: pointer;
+  background-color: silver;
+  outline: none;
+  border: $primary-font-color solid 1px;
+  width: 30px;
+  height: 30px;
+  transform: rotate(45deg);
+  border-radius: 15px;
+  visibility: visible;
+  z-index: 10000;
+}
+
+.buttonContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+  color: $primary-font-color;
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+}
+
+.heroTxtContainer {
+  position: absolute;
+  width: 50%;
+  color: #fff;
+  z-index: 99999;
+  top: 1%;
+  left:5%;
+  text-shadow: 3px 3px dimgray;
+}
+.heroHeader {
+    font-size: 3.5em;
+    font-family: "Roboto";
+    text-align: left;
+  }
+
+.strongred {
+  color: #cc0000;
+}
+
+.bubble {
+  position: absolute;
+}
+#blueBubble {
+  width: 80vh;
+  top: 0;
+  right: 35vw;
+  opacity: 70%;
+}
+#purpleBubble {
+  width: 50vh;
+  top: 0vh;
+  right: 3vw;
+  opacity: 50%;
+}
+
+
 
 .footerContainer {
+  position: absolute;
+  height: 10vh;
+  width: 100vw;
+  padding: 0;
+  margin:0;
+  bottom: 0px;
+  border-radius: 2vw 2vw 0 0;
+  background-color: $secondary-color;
+  z-index: 10;
+}
+
+.comLogoContainer {
     position:relative;
-    height:10vh;
-    width:100vw;
-    background-color: $secondary-color;
+    display:flex;
+    align-items: top;
+background-color: transparent;
+  padding-left: 2%;
+  padding-top: 1vh;
+  z-index: 19;
+  height:100%;
+  top:0;
+}
+
+.comLogoContainer > *{
+    margin-right:10px;
+}
+
+.logoCom {
+    height:80%;
+    top:0;
 }
