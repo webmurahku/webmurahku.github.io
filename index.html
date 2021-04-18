@@ -36,10 +36,25 @@
 
     <div id="footerBox" class="footerContainer">
         <div class="comLogoContainer">
-            <button id="whatsappButton" class="logoCom">
-            <button id="facebookButton" class="logoCom">
-            <button id="instagramButton" class="logoCom">
+            <div id="whatsappBox" class="logoComBox">
+                <button id="whatsappButton" class="logoCom"></button>
+                <div id="whatsappForm">
+                    <textarea class="formMessageBox"></textarea>
+                    <button id="whatsappMsgSend" class="formSendButton">KIRIM</button>
+                    <button id="whatsappMsgClose" title="tutup" class="formCloseButton">
+                        <div class="buttonContent">+</div>
+                    </button>
+                </div>
+               
+            </div>
+            <div id="facebookBox" class="logoComBox">
+                <button id="facebookButton" class="logoCom"></button>
+            </div>
+            <div id="instagramBox" class="logoComBox">
+                <button id="instagramButton" class="logoCom"></button>
+            </div>
         </div>
+
 
         <div id="detailBox" class="detailContainer">
             <h3 class="subHeader">99Ribu dapat apa saja ?</h3>
@@ -49,17 +64,19 @@
                     https://(nama).xxxxxx.xxx
                 </li>
                 <li class="desc">Short link https://bit.ly/(nama).</li>
-                <li class="desc">Konsultasi digital marketing melalui instagram/facebook/google.</li>
+                <li class="desc">SEO</li>
+                <li class="desc">Konsultasi digital marketing.</li>
             </ul>
 
+
+
+            <button id="closeButton" class="closeButton">
+                <div class="buttonContent">+</div>
+            </button>
         </div>
 
-        <button id="closeButton" class="closeButton">
-            <div class="buttonContent">+</div>
-        </button>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-    <script src="/assets/main.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+        <script src="/assets/main.js"></script>
 
 </body>
 

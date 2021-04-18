@@ -13,8 +13,7 @@ html {
 }
 
 body {
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow:hidden;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -111,6 +110,47 @@ body {
   width: 100%;
 }
 
+.formMessageBox {
+  position:absolute;
+  top:10vh;
+  left:1.5vh;
+  width:28vw;
+  height:20vh;
+  resize: none;
+  outline:none;
+}
+
+.formSendButton {
+  position:absolute;
+  margin: 0;
+  padding:0;
+  border:none;
+  background-color:#00a800;
+  outline:invert;
+  top:32vh;
+  left:1.5vh;
+  width:28.5vw;
+  height:35px;
+  color:#fff;
+  font-family:"Roboto";
+  cursor: pointer;
+}
+
+.formCloseButton {
+  position:absolute;
+  top:1vh;
+  right:1vh;
+  width:30px;
+  height:30px;
+  outline:none;
+  border-radius: 15px;
+  border:dimgray solid 1px;
+  color:dimgray;
+  background-color:transparent;
+  z-index:10000;
+  cursor: pointer;
+}
+
 .heroTxtContainer {
   position: absolute;
   width: 50%;
@@ -134,7 +174,7 @@ body {
   position: absolute;
 }
 #blueBubble {
-  width: 80vh;
+  width: 75vh;
   top: 0;
   right: 35vw;
   opacity: 70%;
@@ -161,7 +201,7 @@ body {
 }
 
 .comLogoContainer {
-    position:relative;
+    position:absolute;
     display:flex;
     align-items: top;
 background-color: transparent;
@@ -177,8 +217,8 @@ background-color: transparent;
 }
 
 .logoCom {
-  width: 8vh;
-  height: 8vh;
+  width: 7vh;
+  height: 7vh;
   outline:none;
   border:none;
   cursor: pointer;
@@ -190,10 +230,58 @@ background-color: transparent;
   opacity:100%;
 }
 
+.logoComBox {
+  position:absolute;
+  background-color: #cdd;
+  padding:0.5vh;
+  height:7vh;
+  width:7vh;
+  border-radius:4vh;
+  border:#cdd solid 1px;
+}
+
+#whatsappBox {
+  top:1vh;
+  left:2vh;
+}
+
+#whatsappMsg {
+  position:absolute;
+  top:1vh;
+  left:2vh;
+}
+#whatsappForm {
+  position:absolute;
+  top:0;
+  left:0;
+  display:none;
+  visibility:hidden;
+  background-color: transparent;
+}
+
+#facebookBox {
+  top:1vh;
+  left:12vh;
+}
+
+#instagramBox {
+  top:1vh;
+  left:22vh;
+}
+
 #whatsappButton {
+  position:absolute;
   background-image: url("/assets/logoWhatsapp.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#whatsappForm {
+  visibility:hidden;
+  position:absolute;
+  margin-top:0vh;
+  width:100%;
+  height:100%;
 }
 
 #facebookButton {
@@ -245,7 +333,7 @@ background-color: transparent;
   background-color: transparent;
   height: 100%;
   width: 90%;
-  top: 0px;
+  top: 0;
   left: 5vw;
   padding: 0;
   margin: 0;
@@ -271,10 +359,10 @@ background-color: transparent;
 }
 
 .desc {
-  font-family: "Montserat";
+  font-family: "Montserrat";
   margin: 0;
   padding: 0;
   margin-left:0%;
   margin-right:auto;
-  font-size:5vh;
+  font-size:3vh;
 }
