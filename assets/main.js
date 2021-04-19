@@ -74,18 +74,13 @@ whatsappButton.addEventListener("click", () => {
         tl.to(whatsappButton, { duration: 0.25, y:"-45vh", height: "40vh", ease: "power4" });
         tl.to(whatsappButton, {duration:0.25, width:"30vw", ease:"power4"});
         tl.to(waForm,{duration:0.5, display:"block",visibility:"visible",opacity:100});
-
-      
     }
 });
 
-
-
-
-
-
-
-
+waFormButton.addEventListener("click",()=> {
+    var tl = gsap.timeline();
+    tl.to(waForm,{display:"none",visibility:"hidden"});
+})
 
 facebookButton.addEventListener("click", () => {
     alert("facebook");
