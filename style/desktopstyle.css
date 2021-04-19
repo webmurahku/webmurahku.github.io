@@ -8,7 +8,8 @@ html {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
   height: 100vh;
   width: 100vw;
   margin: 0;
@@ -19,7 +20,6 @@ body {
 }
 
 .headerContainer {
-  position: relative;
   background-color: transparent;
   height: 34vh;
 }
@@ -29,10 +29,10 @@ body {
   background-color: transparent;
   background-image: url(/assets/Logo.svg);
   background-repeat: no-repeat;
-  width: 40%;
-  height: 95%;
-  top: 5%;
-  left: 1%;
+  width: 30%;
+  height: 85%;
+  top: 1.5vh;
+  left: 1vw;
 }
 
 .contentContainer {
@@ -114,6 +114,7 @@ body {
   height: 20vh;
   resize: none;
   outline: none;
+  border: none;
 }
 
 .formSendButton {
@@ -140,6 +141,7 @@ body {
   height: 30px;
   outline: none;
   border-radius: 15px;
+  transform: rotate(45deg);
   border: dimgray solid 1px;
   color: dimgray;
   background-color: transparent;
@@ -237,6 +239,15 @@ body {
   border: #cdd solid 1px;
 }
 
+#ourWhatsapp {
+  position: absolute;
+  left: 10vh;
+  top: 1vh;
+  font-family: "Roboto";
+  color: #fff;
+  font-size: 3vh;
+}
+
 #whatsappBox {
   top: 1vh;
   left: 2vh;
@@ -249,12 +260,12 @@ body {
 }
 
 #whatsappForm {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: none;
+  opacity: 0;
   visibility: hidden;
-  background-color: transparent;
+  position: absolute;
+  margin-top: 0vh;
+  width: 100%;
+  height: 100%;
 }
 
 #facebookBox {
@@ -272,14 +283,6 @@ body {
   background-image: url("/assets/logoWhatsapp.svg");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-#whatsappForm {
-  visibility: hidden;
-  position: absolute;
-  margin-top: 0vh;
-  width: 100%;
-  height: 100%;
 }
 
 #facebookButton {

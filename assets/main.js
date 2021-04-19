@@ -9,6 +9,10 @@ var whatsappButton = document.getElementById("whatsappBox");
 var facebookButton = document.getElementById("facebookButton");
 var instagramButton = document.getElementById("instagramButton");
 //var label = document.getElementById("text");
+var waForm = document.getElementById("whatsappForm");
+var waFormButton = document.getElementById("whatsappMsgClose");
+
+
 
 var blueBubble = document.getElementById("blueBubble");
 var purpleBubble = document.getElementById("purpleBubble");
@@ -66,12 +70,22 @@ whatsappButton.addEventListener("click", () => {
         tl.to(whatsappButton, { duration: 0.5, y: "-45vh", width: "80vw", height: "40vh", ease: "power4" });
     }
     else {
-        var waForm = document.getElementById("whatsappForm");
 
-        tl.to(whatsappButton, { duration: 0.5, y:"-45vh", width: "30vw", height: "40vh", ease: "power4" });
-        tl.to(waForm,{duration:0.5, display:"block",visibility:"visible"});
+        tl.to(whatsappButton, { duration: 0.25, y:"-45vh", height: "40vh", ease: "power4" });
+        tl.to(whatsappButton, {duration:0.25, width:"30vw", ease:"power4"});
+        tl.to(waForm,{duration:0.5, display:"block",visibility:"visible",opacity:100});
+
+      
     }
 });
+
+
+
+
+
+
+
+
 
 facebookButton.addEventListener("click", () => {
     alert("facebook");
