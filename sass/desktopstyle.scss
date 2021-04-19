@@ -208,31 +208,9 @@ body {
   width:7vh;
 }
 
-#facebookBox {
-  top:1vh;
-  left:12vh;
-}
-
-#instagramBox {
-  top:1vh;
-  left:22vh;
-}
-
 #whatsappButton {
   position:absolute;
   background-image: url("/assets/logoWhatsapp.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#facebookButton {
-  background-image: url("/assets/logoFacebook.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-#instagramButton {
-  background-image: url("/assets/logoInstagram.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -267,7 +245,6 @@ body {
   height: 100%;
   width: 100%;
 }
-
 
 .detailContainer {
   position: absolute;
