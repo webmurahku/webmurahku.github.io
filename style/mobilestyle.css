@@ -265,7 +265,7 @@ a {
     padding: 0.5vh 0.5vw;
     border: gray solid 1px;
     width: 60vw;
-    height: 28vh;
+    height: 26vh;
     resize: none;
     border-radius: 1vh;
   }
@@ -289,7 +289,7 @@ a {
   .formCommandButton {
     position: absolute;
     border: none;
-    top: 38vh;
+    top: 36vh;
     left: 16vw;
     width: 61.5vw;
     height: 40px;
