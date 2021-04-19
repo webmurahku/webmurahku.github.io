@@ -4,17 +4,19 @@
 
 $primary-color: #5dad7eff;
 $primary-font-color: gray;
+$shade-color : #fff;
 $secondary-color: #fff;
-
-input,
-textarea,
-button,
-select,
-a {
-  -webkit-tap-highlight-color: transparent;
-}
+$go-color:#00a86b;
 
 @media screen and (max-width: 720px) {
+  input,
+  textarea,
+  button,
+  select,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+
   html {
     margin: 0;
     padding: 0;
@@ -94,7 +96,7 @@ a {
     position: absolute;
     background-color: transparent;
     padding: 0;
-    right: 5px;
+    right: 0px;
     top: 5px;
     outline: none;
     border: $primary-font-color solid 1px;
@@ -182,37 +184,23 @@ a {
   .logoCom {
     width: 7vh;
     height: 7vh;
-    outline:none;
-    border:none;
+    outline: none;
+    border: none;
     background-color: transparent;
-  
   }
 
   .logoComBox {
-    position:absolute;
+    position: absolute;
     background-color: #eff;
-    padding:0.5vh;
-    height:7vh;
-    width:7vh;
-    border-radius:4vh;
-    border:#eff solid 1px;
+    padding: 0.5vh;
+    height: 7vh;
+    width: 7vh;
+    border-radius: 4vh;
+    border: #eff solid 1px;
   }
 
-  #whatsappMsgSend {
-    position:absolute;
-    background-color:red;
-    height:2vh;
-  }
   #whatsappBox {
-    left:2vh;
-  }
-  
-  #facebookBox {
-    left:12vh;
-  }
-  
-  #instagramBox {
-    left:22vh;
+    left: 1vh;
   }
 
   #whatsappButton {
@@ -221,54 +209,96 @@ a {
     background-size: cover;
   }
 
-  #facebookButton {
-    background-image: url("/assets/logoFacebook.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  #instagramButton {
-    background-image: url("/assets/logoInstagram.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-
   .detailContainer {
     position: absolute;
     background-color: transparent;
     height: 100%;
-    width: 90%;
+    width: 95%;
     top: 0px;
     left: 15px;
     padding: 0;
     margin: 0;
     box-sizing: border;
-    visibility:hidden;
-    opacity:0;
+    visibility: hidden;
+    opacity: 0;
   }
 
   .subHeader {
     font-family: "Montserrat";
     color: #444c;
     font-size: 3.5vh;
+    padding-top:5vh;
     margin-bottom: 10px;
   }
 
   .descList {
-    padding:0 0 0 6vw;
-    margin:0;
+    padding: 0 0 0 6vw;
+    margin: 0;
     justify-content: left;
-    
-
   }
 
   .desc {
     font-family: "Montserat";
-    font-size:2.5vh;
+    font-size: 2.5vh;
     margin: 0;
     padding: 0;
-    margin-left:0%;
-    margin-right:auto;
+    margin-left: 0%;
+    margin-right: auto;
+  }
+
+  /* FOOTER SUB COMPONENT FORMS ==================*/
+  .waForm {
+    position: absolute;
+    display: none;
+  }
+
+  #waFormTitle {
+    position: absolute;
+    left: 16vw;
+    top: 1.5vh;
+    font-family: "Roboto";
+    font-size: 6vw;
+  }
+
+  #waFormTextMessage {
+    position: absolute;
+    top: 8vh;
+    left: 16vw;
+    outline: none;
+    padding: 0.5vh 0.5vw;
+    border: $primary-font-color solid 1px;
+    width: 60vw;
+    height: 28vh;
+    resize: none;
+    border-radius: 1vh;
+  }
+
+  .formCloseButton {
+    position: absolute;
+    right: 2vw;
+    top: 1vh;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    outline: none;
+    border: $primary-font-color solid 1px;
+    color: $primary-font-color;
+    font-size: 20px;
+    padding: 0;
+    cursor: pointer;
+    transform: rotate(45deg);
+  }
+
+  .formCommandButton {
+    position: absolute;
+    border: none;
+    top: 38vh;
+    left: 16vw;
+    width: 61.5vw;
+    height: 40px;
+    color: $secondary-color;
+    font-size: 16px;
+    background-color: $go-color;
+    cursor: pointer;
   }
 }

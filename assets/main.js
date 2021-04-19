@@ -1,4 +1,7 @@
 console.log("This javascript is working");
+var isPortrait = (window.innerHeight / window.innerWidth) > 1;
+
+
 
 var target = document.getElementById("footerBox");
 var sosmed = document.querySelectorAll(".logoComBox");
@@ -14,7 +17,6 @@ var tl = gsap.timeline();
 tl.to(blueBubble, { duration: 5, y: "5vh", repeat: -1, ease: "power1", yoyo: true, delay: 1 });
 tl.to(purpleBubble, { duration: 5, x: "3vw", repeat: -1, yoyo: true }, "-=4.5");
 
-var isPortrait = (window.innerHeight / window.innerWidth) > 1;
 
 //MAU! Button click event
 confirmButton.addEventListener("click", () => {
@@ -59,14 +61,23 @@ closeButton.addEventListener("click", () => {
 });
 
 var waButton = document.querySelector("#whatsappButton");
+
 waButton.addEventListener("click", () => {
     var waBox = document.querySelectorAll("#whatsappBox");
     var waForm = document.querySelectorAll(".waForm");
 
     var tl = gsap.timeline();
-    tl.to(waBox,{duration:0.25, y:"-40vh", ease:"power2"}); 
-    tl.to(waBox,{duration:0.25, width:"37vw", height:"37vh", ease:"power2"});
-    tl.to(waForm,{duration:0, display:"block"});
+
+    if (isPortrait) {
+        tl.to(waBox, { duration: 0.25, y: "-50vh", ease: "power2" });
+        tl.to(waBox, { duration: 0.25, width: "87vw", height: "45vh", ease: "power2" });
+        tl.to(waForm, { duration: 0, display: "block" });
+    }
+    else {
+        tl.to(waBox, { duration: 0.25, y: "-40vh", ease: "power2" });
+        tl.to(waBox, { duration: 0.25, width: "37vw", height: "37vh", ease: "power2" });
+        tl.to(waForm, { duration: 0, display: "block" });
+    }
 
     var waCloseButton = document.getElementById("waFormCloseButton");
     waCloseButton.addEventListener("click", () => {
@@ -74,12 +85,12 @@ waButton.addEventListener("click", () => {
     })
 
     var waSendButton = document.getElementById("waFormSendButton");
-    waSendButton.addEventListener("click", ()=> {
+    waSendButton.addEventListener("click", () => {
         console.log("send message");
         var msgText = document.getElementById("waFormTextMessage");
         //console.log(msgText)
-        var win = window.open(`https://wa.me/${waNumber}?text=${msgText.value}`,`_blank`);
-        msgText.value="";
+        var win = window.open(`https://wa.me/${waNumber}?text=${msgText.value}`, `_blank`);
+        msgText.value = "";
         tl.reverse();
     })
 })
