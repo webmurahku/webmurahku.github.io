@@ -196,6 +196,12 @@ a {
     border: #eff solid 1px;
   }
 
+  #whatsappMsgSend {
+    position: absolute;
+    background-color: red;
+    height: 2vh;
+  }
+
   #whatsappBox {
     left: 2vh;
   }

@@ -5,23 +5,18 @@ var sosmed = document.querySelectorAll(".logoComBox");
 var detail = document.getElementById("detailBox");
 var confirmButton = document.getElementById("confirmButton");
 var closeButton = document.getElementById("closeButton");
-var whatsappButton = document.getElementById("whatsappBox");
-var facebookButton = document.getElementById("facebookButton");
-var instagramButton = document.getElementById("instagramButton");
-//var label = document.getElementById("text");
-var waForm = document.getElementById("whatsappForm");
-var waFormButton = document.getElementById("whatsappMsgClose");
-
-
+var waNumber = "+628113023262";
 
 var blueBubble = document.getElementById("blueBubble");
 var purpleBubble = document.getElementById("purpleBubble");
+
 var tl = gsap.timeline();
 tl.to(blueBubble, { duration: 5, y: "5vh", repeat: -1, ease: "power1", yoyo: true, delay: 1 });
 tl.to(purpleBubble, { duration: 5, x: "3vw", repeat: -1, yoyo: true }, "-=4.5");
-//var closebutton = document.getElementById("closeButton");
+
 var isPortrait = (window.innerHeight / window.innerWidth) > 1;
 
+//MAU! Button click event
 confirmButton.addEventListener("click", () => {
 
     var tl = gsap.timeline();
@@ -42,6 +37,7 @@ confirmButton.addEventListener("click", () => {
 
 });
 
+//MAU! Detail Content Close Button event
 closeButton.addEventListener("click", () => {
     closeButton.style.visibility = "hidden";
     var tl = gsap.timeline();
@@ -62,39 +58,28 @@ closeButton.addEventListener("click", () => {
 
 });
 
-whatsappButton.addEventListener("click", () => {
-    confirmButton.disabled = "true";
+var waButton = document.querySelector("#whatsappButton");
+waButton.addEventListener("click", () => {
+    var waBox = document.querySelectorAll("#whatsappBox");
+    var waForm = document.querySelectorAll(".waForm");
+
     var tl = gsap.timeline();
-    if (isPortrait) {
-        tl.set(whatsappButton, { transformOrigin: 'right bottom' });
-        tl.to(whatsappButton, { duration: 0.5, y: "-45vh", width: "80vw", height: "40vh", ease: "power4" });
-    }
-    else {
+    tl.to(waBox,{duration:0.25, y:"-40vh", ease:"power2"}); 
+    tl.to(waBox,{duration:0.25, width:"37vw", height:"37vh", ease:"power2"});
+    tl.to(waForm,{duration:0, display:"block"});
 
-        tl.to(whatsappButton, { duration: 0.25, y:"-45vh", height: "40vh", ease: "power4" });
-        tl.to(whatsappButton, {duration:0.25, width:"30vw", ease:"power4"});
-        tl.to(waForm,{duration:0.5, display:"block",visibility:"visible",opacity:100});
-    }
-});
+    var waCloseButton = document.getElementById("waFormCloseButton");
+    waCloseButton.addEventListener("click", () => {
+        tl.reverse();
+    })
 
-waFormButton.addEventListener("click",()=> {
-    var tl = gsap.timeline();
-    tl.to(waForm,{display:"none",visibility:"hidden"});
+    var waSendButton = document.getElementById("waFormSendButton");
+    waSendButton.addEventListener("click", ()=> {
+        console.log("send message");
+        var msgText = document.getElementById("waFormTextMessage");
+        //console.log(msgText)
+        var win = window.open(`https://wa.me/${waNumber}?text=${msgText.value}`,`_blank`);
+        msgText.value="";
+        tl.reverse();
+    })
 })
-
-facebookButton.addEventListener("click", () => {
-    alert("facebook");
-});
-
-instagramButton.addEventListener("click", () => {
-    alert("instagram");
-})
-
-
-
-
-
-
-
-
-
