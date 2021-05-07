@@ -12,21 +12,22 @@
 }
 
 body {
-  padding: 2rem 0rem;
-  background-color: #113322;
+  padding: 5vh 0rem 0 0;
+  background-color: #112221;
+  overflow: hidden;
 }
 
 header {
-  margin: 0 4rem;
+  position: relative;
+  margin: 0 4vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
-  grid-template-rows: 10rem;
+  grid-template-rows: 30vh;
 }
 header img {
-  position: static;
-  height: 100%;
-  width: auto;
-  text-align: left;
+  position: relative;
+  height: 80%;
+  width: Auto;
 }
 header .headerHeroText {
   display: flex;
@@ -42,22 +43,23 @@ header .headerHeroText h1 {
 }
 
 main {
-  padding: 0rem 0;
+  padding: 0;
+  margin: 0;
   margin: auto auto;
 }
 main .heroBlock {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 25rem;
+  justify-content: center;
+  height: 50vh;
+  background-color: red;
   width: 100%;
 }
 main .heroBlock h2 {
   text-align: center;
   color: #fdd;
   font-weight: 100;
-  font-size: 10rem;
   font-family: "Passion One";
 }
 main .heroBlock .mainHeroContainer {
@@ -65,12 +67,39 @@ main .heroBlock .mainHeroContainer {
   justify-content: center;
   align-items: center;
   background-color: #011020;
-  height: 70%;
+  height: 100%;
   width: 100%;
+}
+
+.arrowButton {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 14vh;
 }
 
 .hide {
   display: none;
+}
+
+.landingPage {
+  height: 100vh;
+  padding: 1rem 4rem;
+}
+
+.sectionTitle {
+  color: white;
+  font-size: 3rem;
 }
 
 /*# sourceMappingURL=style.css.map */
