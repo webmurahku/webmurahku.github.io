@@ -1,0 +1,76 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 2rem 0rem;
+  background-color: $body-color-bg;
+}
+
+header {
+    margin:0 4rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 10rem;
+  img {
+    position: static;
+    height: 100%;
+    width: auto;
+    text-align: left;
+  }
+
+  .headerHeroText {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    h1 {
+      text-align: right;
+      color: $header-hero-color;
+      font-size: $header-hero-fontSize;
+      line-height: $header-hero-fontSize;
+      font-weight: 500;
+    }
+  }
+}
+
+main {
+  padding: 0rem 0;
+  .heroBlock {
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items:center;
+    height: 25rem;
+    width: 100%;
+    h2 {
+      text-align: center;
+      color: $main-hero-color;
+      font-weight: 100;
+      font-size: $main-hero-fontSize;
+      font-family: $galaxyFont;
+    }
+    .mainHeroContainer {
+        display:flex;
+        justify-content:center;
+        align-items: center;
+      background-color: $galaxyBlack;
+      height: 70%;
+      width: 100%;
+    }
+  }
+
+  margin: auto auto;
+}
+
+
+
+//helper class
+.hide {
+  display: none;
+}

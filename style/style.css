@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Passion+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Passion+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 2rem 0rem;
+  background-color: #113322;
+}
+
+header {
+  margin: 0 4rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 10rem;
+}
+header img {
+  position: static;
+  height: 100%;
+  width: auto;
+  text-align: left;
+}
+header .headerHeroText {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+header .headerHeroText h1 {
+  text-align: right;
+  color: #fdd;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 500;
+}
+
+main {
+  padding: 0rem 0;
+  margin: auto auto;
+}
+main .heroBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 25rem;
+  width: 100%;
+}
+main .heroBlock h2 {
+  text-align: center;
+  color: #fdd;
+  font-weight: 100;
+  font-size: 10rem;
+  font-family: "Passion One";
+}
+main .heroBlock .mainHeroContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #011020;
+  height: 70%;
+  width: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
