@@ -1,3 +1,4 @@
+
 const heroContainer = document.getElementById("heroText");
 
 const el = document.createElement("H2");
@@ -36,5 +37,5 @@ async function animeText(container, el, words, timer) {
 const nextButton = document.getElementById("nextSectionButton");
 
 nextButton.addEventListener("click",()=>{
-    gsap.to("body",{duration:1,y:"-100vh",ease:"power4.out"});
+    gsap.to("body",{duration:1, y:"-100vh",ease:"power4.out"});
 });
