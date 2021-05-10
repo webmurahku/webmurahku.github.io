@@ -1,0 +1,27 @@
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    color:#fddcfd;
+    font-family: "Poppins";
+}
+
+.testHero{
+    width:100%;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    background-color:#221122;
+}
+
+.animatedHero{
+    background-color:red;
+    width:100%;
+}
+
+h1{
+    font-size:0rem;
+    text-align: center;
+}

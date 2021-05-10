@@ -53,8 +53,8 @@ main {
     width: 100%;
     h2 {
       text-align: center;
-      color: $main-hero-color;
-      font-weight: 100;
+      color:white;
+      font-weight: 500;
       font-family: $galaxyFont;
     }
     .mainHeroContainer {
@@ -111,4 +111,14 @@ main {
   color:white;
   font-weight: 100;
   text-indent: 3rem;
+}
+
+.sideRight {
+  img{
+    position:absolute;
+    top:114vh;
+    right: 10rem;
+    width:500px;
+    height:auto;
+  }
 }
