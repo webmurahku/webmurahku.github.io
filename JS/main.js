@@ -1,4 +1,6 @@
 
+const heroText = "Jaman NOW\nJualan kudu ONLINE\nKamu SUDAH?";
+//const heroText="Jangan lupa WEBMURAHKU\nselalu TERMURAH\nsejagad antero MAYA";
 const heroContainer = document.getElementById("heroText");
 const cHex = ["0","1","2","3","4","5","6","7","8","9","A","B","C","D","E","F"];
 
@@ -7,11 +9,31 @@ const el = document.createElement("H2");
 
 heroContainer.append(el);
 
-animeText(heroContainer, el, "Jaman NOW\njualan kudu ONLINE\nkamu SUDAH?", 2);
+animeText(heroContainer, el, heroText, 2);
 
 
 
 ///////// FUNCTIONS TO DETACH
+
+function animeArrow() {
+  const circle = document.getElementById("arrowCircle");
+  const text = document.getElementById("arrowText");
+  const arrows = document.querySelectorAll(".arrowSVG");
+  
+  circle.style.transformOrigin="center center";
+  arrows.forEach(element=>{
+    element.style.transformOrigin ="top center";
+  })
+  
+  const tl = gsap.timeline();
+
+  tl.fromTo(circle,{opacity:0, scale:0},{duration:2,scale:1, opacity:"50%", ease:"bounce"});
+  tl.fromTo(arrows,{opacity:0, scale:0},{duration:1.5,scale:1, opacity:100, stagger:0.5, ease:"power1", repeat:-1});
+  tl.to(text,{duration:1.5, opacity:"50%", ease:"power4"});
+ //tl.to()
+}
+
+
 
 async function animeText(container, el, words, timer){
   word = words.split("\n");
@@ -56,6 +78,10 @@ async function animeText(container, el, words, timer){
         if(c<pWord.length){
           anime(el, pWord[c], aWord[c], timer);
         }
+        else{
+          animeArrow();
+        }
+        
       }
    })
     

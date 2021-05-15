@@ -1,0 +1,14 @@
+<svg version="1.1" viewBox="0 0 121.51 38.094" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter id="filter972" x="-.13767" y="-.13767" width="1.2753" height="1.2753" style="color-interpolation-filters:sRGB">
+   <feGaussianBlur stdDeviation="4.0153486"/>
+  </filter>
+ </defs>
+ <g transform="translate(22.956 -110.22)">
+  <g transform="matrix(.26458 0 0 .26458 -27.732 17.907)">
+   <circle cx="62.688" cy="393.54" r="35" style="fill:#cc0000;filter:url(#filter972);opacity:.54516;stop-color:#000000"/>
+   <text x="310.45496" y="492.54874" style="fill:#cc0000;font-family:Arial;font-size:40px;line-height:1.25" xml:space="preserve"><tspan x="310.45496" y="492.54874" style="fill:#cc0000;font-family:Bahnschrift;font-size:40px;font-weight:600">klik disini</tspan></text>
+   <path d="m300.25 480.22-167.85-62.228-2.3175 6.2512-17.357-13.545s-2.8306-1.9543-1.967-4.2839c.86359-2.3297 4.2844-1.967 4.2844-1.967l21.992 1.0433-2.3173 6.2506 167.85 62.228z" style="fill:#cc0000;stop-color:#000000"/>
+  </g>
+ </g>
+</svg>
