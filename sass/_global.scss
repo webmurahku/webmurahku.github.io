@@ -9,7 +9,7 @@
 
 body {
   background-color: $body-color-bg;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 header {
@@ -76,28 +76,31 @@ main {
   padding: 0;
   margin: 0;
   
-
-  margin: auto auto;
 }
 
 .arrowButton {
+  position:fixed;
   padding:1vh 0;
   height:20vh;
   width:100vw;
   display:flex;
   flex-direction: column;
   justify-content:flex-end;
-  align-items: center;
+  align-items: flex-start;
+  cursor: pointer;
+  z-index:10;
   #arrowImage {
    height:5vh;
     width:auto;
   }
   .arrowSVG {
     opacity:0;
+    fill:hsl(49, 100%, 29%);
   }
 
   #arrowText{
     opacity:0;
+    color:hsl(49, 100%, 29%);;
   }
 
   #arrowCircle{
@@ -125,7 +128,7 @@ main {
 .containerHorizontal{
   display:grid;
   grid-template-columns: 1fr 1.7fr;
-  padding:5rem;
+  padding:0 5rem;
   column-gap: 5rem;
   
 }

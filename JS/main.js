@@ -27,9 +27,9 @@ function animeArrow() {
   
   const tl = gsap.timeline();
 
-  tl.fromTo(circle,{opacity:0, scale:0},{duration:2,scale:1, opacity:"50%", ease:"bounce"});
-  tl.fromTo(arrows,{opacity:0, scale:0},{duration:1.5,scale:1, opacity:100, stagger:0.5, ease:"power1", repeat:-1});
-  tl.to(text,{duration:1.5, opacity:"50%", ease:"power4"});
+  tl.fromTo(circle,{opacity:0, scale:0},{duration:1.5,scale:1, opacity:"50%", ease:"bounce"});
+  tl.fromTo(arrows,{opacity:0, scale:0},{duration:0.85,scale:1, opacity:100, stagger:0.5, ease:"power1", repeat:-1});
+  tl.to(text,{duration:1, opacity:"50%", ease:"power4"});
  //tl.to()
 }
 
@@ -108,34 +108,11 @@ function getFontSize(ctr, el, text){
   return tH+"px";
 }
 
-/* async function animeText(container, el, words, timer) {
-
-  word = words.split("\n");
-  const lengths = word.map(a=>a.length);
-  const longest = lengths.indexOf(Math.max(...lengths));
-  
-  el.textContent = word[longest];
-  var textRatio = el.offsetWidth/el.offsetHeight;
-  textHeight = container.offsetWidth * 0.7 /textRatio;
-  el.style.fontSize = textHeight+"px";
-
-  
-  await anime(el, word, timer)
-    
-  
-  async function anime(el, word, timer) {
-    for (i = 0; i < word.length; i++) {
-      el.textContent = word[i];
-      await gsap.from(el, { duration: `${timer}`, fontSize: "1px", ease: "power1.out" });
-    }
-  }
-} */
 
 
-
-/* const nextButton = document.getElementById("nextSectionButton");
+const nextButton = document.getElementById("nextSectionButton");
 
 nextButton.addEventListener("click",()=>{
     gsap.to("body",{duration:1, y:"-100vh",ease:"power4.out"});
+    gsap.to(nextButton,{duration:1.5,y:"100vh",ease:"power4.out"},"-=1");
 });
- */
