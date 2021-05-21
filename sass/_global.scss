@@ -9,7 +9,7 @@
 
 body {
   background-color: $body-color-bg;
-  overflow: hidden;
+  overflow-x:hidden;
 }
 
 header {
@@ -120,17 +120,38 @@ main {
   }
 }
 
+.imageContainer {
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  
+  img{
+    width:70%;
+    border-radius: 10px;
+    box-shadow: 0 0 1rem $body-color-shadow;
+  }
+}
+
 //helper class
 .hide {
   display: none;
 }
 
 .containerHorizontal{
-  display:grid;
-  grid-template-columns: 1fr 1.7fr;
-  padding:0 5rem;
-  column-gap: 5rem;
+  height:100vh;
   
+  display:grid;
+  grid-template-columns: 1fr 1.5fr;
+  padding:1rem 8rem;
+  column-gap: 1rem;
+  
+}
+
+.description {
+  height:80%;
+  margin-top:2rem;
 }
 
 .descriptionImage{
@@ -171,13 +192,13 @@ main {
 
 .sectionTitle{
     color:white;
-    font-size:2rem;
+    font-size: $font-subheader;
     margin-bottom:1.5rem;
 }
 
 .pContent{
   text-align:justify;
-  font-size: 1rem;
+  font-size: $font-regular;
   margin-bottom:1rem;
   color:white;
   font-weight: 100;
